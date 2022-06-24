@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+</head>
+<body>
+    <h1 id="one">JAVASCRIPT</h1>
+    <form name="f1" onchange="hello()">
+        <select name="c">
+            <option value="red">red</option>
+            <option value="chocolate">chocolate</option>
+            <option value="aqua">aqua</option>
+        </select>
+    </form>
+    <script>
+        function hello()
+        {
+            var v = document.f1.c.value;
+            document.getElementById("one").style.color=v;
+        }
+    </script>
+</body>
+</html>
